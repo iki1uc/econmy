@@ -1,9 +1,9 @@
-// yx.js – iki1uc Meta-Universum
-export function YX(x, y, q) {
+// q.js – Meta (Bindung)
+export function Q(meta) {
     return {
-        x,
-        y,
-        q,
-        yx: (x * y) + q
+        q: meta,
+        bind(x, y) {
+            return (x * y) + meta;
+        }
     };
 }
